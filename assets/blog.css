@@ -1,0 +1,271 @@
+header, .linha-h3-container, .pesquisa, .links {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    max-height: 70px;
+    padding: 10px 20px;
+    background: #C11616;
+    color: white;
+    justify-content: space-between;
+}
+
+header .logo, header .pesquisa, .linha-h3-container {
+    gap: 10px;
+    margin-left: 70px;
+}
+
+.linha, .linhaf {
+    background-color: aliceblue;
+    width: 50px;
+    height: 1px;
+    transform: rotate(90deg);
+    margin: 0;
+}
+
+header .pesquisa input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(241, 238, 238);
+    outline: none;
+    background: #C11616;
+    font-size: 14px;
+    width: 200px;
+    transition: width 0.3s ease;
+}
+
+header .pesquisa input:focus {
+    width: 250px;
+    border-color: white;
+}
+
+header .pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    margin-right: 100px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.noticia .autor-data {
+    font-size: 14px;
+    color: #333;
+    background-color: #EFF2F7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.noticia .autor-link {
+    color: red;
+    text-decoration: none;
+}
+
+.noticia .autor-link:hover {
+    text-decoration: underline;
+}
+
+.noticia .historia {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.noticia .continuar-ler {
+    color: #8D9AA6;
+    text-decoration: none;
+    background: linear-gradient(90deg, #EFF0F2 0%, rgba(249, 250, 252, 0.00) 50.31%);
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.noticia .continuar-ler::after {
+    content: '→';
+    font-size: 18px;
+}
+
+.noticia h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.ultimos-posts h3, h2 {
+    color: #8D9AA6;
+}
+
+hr {
+    color: #8D9AA6;
+}
+
+.linhared {
+    width: 81px;
+    height: 4px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #F00 0%, rgba(255, 0, 0, 0.46) 60.12%);
+    margin-top: 100px;
+}
+
+.ver-todas {
+    margin-top: 20px;
+    justify-content: flex-end;
+    color: #707C8C;
+}
+
+.links a {
+    border: 1px solid #e05f5f;
+    padding: 6px 16px;
+    text-decoration: none;
+    color: #e05f5f;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria h2 {
+    color: #EB5151;
+}
+
+.galeria .galeria-container,
+.galeria .galeria-fotos .fotos,
+.galeria .galeria-videos .videos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria .galeria-fotos .fotos,
+.galeria .galeria-videos .videos {
+    width: 50%;
+    height: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 16px;
+}
+
+.galeria .galeria-fotos .fotos div,
+.galeria .galeria-videos .videos div {
+    height: 310px;
+}
+
+.blo {
+    width: 280px;
+    height: 260px;
+    border-radius: 5px;
+    border: 1px solid #eb5151;
+}
+
+footer {
+    background-color: #F9FAFC;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-line {
+    width: 50px;
+    height: 2px;
+    background: var(--ui-color-danger-dark, #C11616);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background-color: #EFF2F7;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .noticia {
+        padding: 15px;
+    }
+
+    .noticia h1 {
+        font-size: 20px;
+    }
+
+    .noticia .autor-data {
+        font-size: 12px;
+    }
+
+    .noticia .historia {
+        font-size: 14px;
+    }
+
+    .noticia .continuar-ler {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
