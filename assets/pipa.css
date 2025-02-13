@@ -1,4 +1,3 @@
-
 html, body {
     font-family: 'Lato', sans-serif;
     width: 100%;
@@ -59,11 +58,12 @@ main {
 .pipa .title h2 {
     font-size: 28px;
     font-weight: bold;
+    color: black;
 }
 
 .pipa .title p {
     font-style: italic;
-    color: #203c86;
+    color: #8492A6;
     font-size: 18px;
 }
 
@@ -72,12 +72,10 @@ main {
     margin: 20px auto;
 }
 
-
 .gallery .imgs {
     display: flex;
     justify-content: space-between;
 }
-
 
 .gallery img {
     width: 100%;
@@ -101,7 +99,68 @@ footer {
     flex-wrap: wrap;
 }
 
+.rodape .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodape .contato img {
+    width: 24px;
+    height: auto;
+}
+
 .rodape .contato span {
     display: block;
-    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rodape .topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rodape .topicos span {
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rodape .topicos span:hover {
+    color: #f0a500;
+}
+
+.rodape .box {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.rodape .box h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.rodape .box p {
+    color: #8492A6;
+}
+
+.rodape .box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #3A95E9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
