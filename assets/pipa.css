@@ -4,163 +4,183 @@ html, body {
     margin: 0;
     background-color: #f0f0f0;
     color: #656D77;
-}
-
-header {
+  }
+  
+  header {
     background-color: #203c86;
     width: 100%;
     padding: 10px 0;
     text-align: center;
-}
-
-header .top {
+  }
+  
+  header .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
     color: white;
-}
-
-header .top img {
+  }
+  
+  header .top img {
     width: 20px;
     margin-left: 10px;
-}
-
-header .down {
+  }
+  
+  header .down {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-}
-
-header .down .sumario a {
+  }
+  
+  header .down .sumario a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
-}
-
-/* Seção principal */
-main {
+  }
+  
+  main {
     width: 80%;
     margin: auto;
     background-color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pipa .title {
+  }
+  
+  .pipa .title {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.pipa .title h2 {
+  }
+  
+  .pipa .title h2 {
     font-size: 28px;
     font-weight: bold;
     color: black;
-}
-
-.pipa .title p {
+  }
+  
+  .pipa .title p {
     font-style: italic;
     color: #8492A6;
     font-size: 18px;
-}
-
-.pipa img {
+  }
+  
+  .pipa img {
     display: block;
     margin: 20px auto;
-}
-
-.gallery .imgs {
+  }
+  
+  .gallery .imgs {
     display: flex;
     justify-content: space-between;
-}
-
-.gallery img {
+  }
+  
+  .gallery img {
     width: 100%;
     border-radius: 5px;
-}
-
-/* Rodapé */
-footer {
+  }
+  
+  footer {
     background-color: #203c86;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-top: 40px;
-}
-
-.rodape {
+  }
+  
+  .rodape {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.rodape .contato {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .rodape .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .rodape .contato {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+  }
+  
+  .rodape .contato p {
+    display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.rodape .contato img {
+    margin: 0;
+  }
+  
+  .rodape .contato img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .rodape .redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .rodape .redes-sociais img {
     width: 24px;
-    height: auto;
-}
-
-.rodape .contato span {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.rodape .topicos {
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .rodape .topicos {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-
-.rodape .topicos span {
-    font-weight: bold;
+    gap: 12px;
+  }
+  
+  .rodape .topicos span {
     cursor: pointer;
     transition: color 0.3s;
-}
-
-.rodape .topicos span:hover {
+  }
+  
+  .rodape .topicos span:hover {
     color: #f0a500;
-}
-
-.rodape .box {
-    text-align: center;
-    background: rgb(255, 255, 255);
-    padding: 15px;
+  }
+  
+  .rodape .box {
+    background: white;
+    padding: 20px;
     border-radius: 8px;
     width: 250px;
-}
-
-.rodape .box h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: black;
-}
-
-.rodape .box p {
-    color: #8492A6;
-}
-
-.rodape .box button {
+  }
+  
+  .rodape .box h3 {
+    color: #203c86;
+    margin: 0 0 10px 0;
+  }
+  
+  .rodape .box p {
+    color: #656D77;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .rodape .box button {
+    background: #3A95E9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #3A95E9;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+    font-weight: bold;
+  }
+  
+  .rodape .box button img {
+    width: 20px;
+    height: 20px;
+  }
+  
