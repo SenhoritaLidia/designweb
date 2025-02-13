@@ -4,167 +4,172 @@ html, body {
     margin: 0;
     background-color: #f0f0f0;
     color: #656D77;
-  }
-  
-  header {
+}
+
+header {
     background-color: #203c86;
     width: 100%;
     padding: 10px 0;
     text-align: center;
-  }
-  
-  header .top {
+}
+
+header .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
     color: white;
-  }
-  
-  header .top img {
+}
+
+header .top img {
     width: 20px;
     margin-left: 10px;
-  }
-  
-  header .down {
+}
+
+header .down {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-  }
-  
-  header .down .sumario a {
+    padding: 20px 5%;
+}
+
+header .down .sumario a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
-  }
-  
-  main {
-    width: 80%;
+}
+
+main {
+    width: 90%;
     margin: auto;
     background-color: white;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .pipa .title {
+}
+
+.pipa .title {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .pipa .title h2 {
+}
+
+.pipa .title h2 {
     font-size: 28px;
     font-weight: bold;
     color: black;
-  }
-  
-  .pipa .title p {
+}
+
+.pipa .title p {
     font-style: italic;
     color: #8492A6;
     font-size: 18px;
-  }
-  
-  .pipa img {
+}
+
+.pipa img {
     display: block;
     margin: 20px auto;
-  }
-  
-  .gallery .imgs {
+}
+
+.gallery .imgs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .gallery img {
+    gap: 10px;
+}
+
+.gallery img {
     width: 100%;
     border-radius: 5px;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #203c86;
     color: white;
     padding: 40px 0;
     margin-top: 40px;
-  }
-  
-  .rodape {
+}
+
+.rodape {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .rodape .logo img {
+}
+
+.rodape .logo img {
     width: 150px;
     margin-bottom: 20px;
-  }
-  
-  .rodape .contato {
+}
+
+.rodape .contato {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .rodape .contato p {
+}
+
+.rodape .contato p {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 0;
-  }
-  
-  .rodape .contato img {
+}
+
+.rodape .contato img {
     width: 20px;
     height: 20px;
-  }
-  
-  .rodape .redes-sociais {
+}
+
+.rodape .redes-sociais {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-  }
-  
-  .rodape .redes-sociais img {
+}
+
+.rodape .redes-sociais img {
     width: 24px;
     height: 24px;
     cursor: pointer;
-  }
-  
-  .rodape .topicos {
+}
+
+.rodape .topicos {
     display: flex;
     flex-direction: column;
     gap: 12px;
-  }
-  
-  .rodape .topicos span {
+}
+
+.rodape .topicos span {
     cursor: pointer;
     transition: color 0.3s;
-  }
-  
-  .rodape .topicos span:hover {
+}
+
+.rodape .topicos span:hover {
     color: #f0a500;
-  }
-  
-  .rodape .box {
+}
+
+.rodape .box {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 250px;
-  }
-  
-  .rodape .box h3 {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.rodape .box h3 {
     color: #203c86;
     margin: 0 0 10px 0;
-  }
-  
-  .rodape .box p {
+}
+
+.rodape .box p {
     color: #656D77;
     font-size: 14px;
     margin-bottom: 15px;
-  }
-  
-  .rodape .box button {
+}
+
+.rodape .box button {
     background: #3A95E9;
     color: white;
     border: none;
@@ -177,10 +182,48 @@ html, body {
     justify-content: center;
     gap: 10px;
     font-weight: bold;
-  }
-  
-  .rodape .box button img {
+}
+
+.rodape .box button img {
     width: 20px;
     height: 20px;
-  }
-  
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .header .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .down {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery .imgs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape .contato {
+        align-items: center;
+    }
+
+    .rodape .redes-sociais {
+        justify-content: center;
+    }
+
+    .rodape .topicos {
+        align-items: center;
+    }
+}
