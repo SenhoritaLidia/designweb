@@ -9,6 +9,10 @@ header {
     background: #C11616;
     color: white;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo, header .pesquisa, .linha-h3-container {
@@ -33,6 +37,7 @@ header .pesquisa input {
     font-size: 14px;
     width: 200px;
     transition: width 0.3s ease;
+    color: white;
 }
 
 header .pesquisa input:focus {
@@ -72,8 +77,8 @@ nav {
 
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 100px auto 0;
 }
 
 .noticia .autor-data {
@@ -99,6 +104,7 @@ main {
     line-height: 1.6;
     color: #333;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .noticia .continuar-ler {
@@ -153,119 +159,261 @@ hr {
 
 .galeria {
     width: 100%;
+    padding: 40px 0;
 }
 
 .galeria h2 {
     color: #EB5151;
 }
 
-.galeria .galeria-container,
-.galeria .galeria-fotos .fotos,
-.galeria .galeria-videos .videos {
+.galeria .galeria-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.galeria .galeria-fotos .fotos,
-.galeria .galeria-videos .videos {
+.galeria .galeria-fotos, .galeria .galeria-videos {
     width: 50%;
-    height: 300px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria .galeria-fotos .fotos, .galeria .galeria-videos .videos {
+    display: flex;
+    overflow-x: auto;
     gap: 16px;
 }
 
-.galeria .galeria-fotos .fotos div,
-.galeria .galeria-videos .videos div {
-    height: 310px;
-}
-
-.blo {
+.galeria .blo {
     width: 280px;
     height: 260px;
     border-radius: 5px;
     border: 1px solid #eb5151;
+    flex-shrink: 0;
+}
+
+.galeria .mais-fotos, .galeria .mais-videos {
+    text-decoration: none;
+    color: #EB5151;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.galeria .mais-fotos::after, .galeria .mais-videos::after {
+    content: '→';
+    font-size: 16px;
 }
 
 footer {
     background-color: #F9FAFC;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.footer-left,
-.footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.footer-left {
+    font-size: 24px;
+    font-style: italic;
+    color: #C11616;
 }
 
-.footer-line {
-    width: 50px;
-    height: 2px;
-    background: var(--ui-color-danger-dark, #C11616);
+.footer-left span {
+    font-weight: bold;
+}
+
+.footer-author {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    color: #8D1C1C;
 }
 
 .footer-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: 10px;
+    text-align: right;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.posts {
+    text-align: left;
+    padding: 40px 0;
 }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 60px;
+.posts h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
-.bar {
-    width: 100%;
+.posts .not {
+    font-size: 16px;
+    color: #707C8C;
+    margin-bottom: 20px;
+}
+
+.blo-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.blo {
+    flex: 0 0 280px;
+    border: 1px solid #eb5151;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blo h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #C11616;
+    margin: 10px 0;
+}
+
+.blo .data {
+    font-size: 14px;
+    color: #C11616;
+}
+
+.blo .linha {
     height: 1px;
-    background-color: #EFF2F7;
-    position: absolute;
+    background: #C11616;
+    width: 100%;
+    margin: 10px 0;
 }
 
-@media (max-width: 768px) {
+.blo .categoria {
+    font-size: 14px;
+    color: #707C8C;
+}
+
+.ver-todas {
+    display: block;
+    margin-top: 20px;
+    color: #C11616;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-todas:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 568px) {
+    header {
+        text-align: center;
+        padding: 3px;
+    }
+    
+    .logo img {
+        max-width: 50px;
+    }
+    
+    .linha-h3-container {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .pesquisa {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .pesquisa input {
+        width: 90%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        margin-bottom: 5px;
+    }
+    
     main {
         padding: 10px;
+        margin: 80px auto 0;
+        max-width: 100%;
     }
-
-    .noticia {
-        padding: 15px;
-    }
-
+    
     .noticia h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
-
-    .noticia .autor-data {
-        font-size: 12px;
-    }
-
+    
     .noticia .historia {
         font-size: 14px;
     }
-
-    .noticia .continuar-ler {
-        font-size: 14px;
-        padding: 8px 15px;
+    
+    .galeria .galeria-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .galeria .galeria-fotos, 
+    .galeria .galeria-videos {
+        width: 100%;
+    }
+    
+    .galeria .fotos, 
+    .galeria .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ultimos-posts {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .ultimos-posts img {
+        width: 10%;
+        margin: auto;
+    }
+    
+    .posts .blo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .blo {
+        width: 90%;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        text-align: center
     }
 }
