@@ -145,10 +145,6 @@ footer {
     transition: color 0.3s;
 }
 
-.rodape .topicos span:hover {
-    color: #f0a500;
-}
-
 .rodape .box {
     background: white;
     padding: 20px;
