@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     background-color: #f0f0f0;
     color: #656D77;
+
 }
 
 header {
@@ -70,7 +71,6 @@ main {
     display: block;
     margin: 20px auto;
 }
-
 .gallery .imgs {
     display: flex;
     flex-wrap: wrap;
