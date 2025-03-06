@@ -1,0 +1,71 @@
+.area-trabalho {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1309px;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+  
+  .inicio-trabalho {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .titulo-trabalho {
+    display: flex;
+    align-items: start;
+  }
+  
+  .titulo-trabalho h1 {
+    font-family: var(--font-titulos);
+    margin: 0px;
+    margin-right: 130px;
+    font-size: 24px;
+  }
+  
+  .button-editar {
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-radius: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: var(--blue-cinsa);
+  }
+  
+  .button-editar small {
+    font-size: 16px;
+    color: var(--blue-editar);
+    margin-left: 6px;
+  }
+  
+  .botoes-trabalho {
+    display: flex;
+    justify-content: space-between;
+    max-width: 396px;
+  }
+  
+  .button-trab {
+    border: 0px;
+    background-color: #fff;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button-trab small,
+  strong {
+    font-family: var(--font-left-center);
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  
+  .button-trab small {
+    color: #797D84;
+  }
+  
+  .button-trab strong {
+    color: #1A1C20;
+  }
