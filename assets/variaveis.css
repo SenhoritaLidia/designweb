@@ -1,0 +1,20 @@
+:root {
+    --blue-pendent: #0F3679;
+    --blue-escuro-left: #0D5EAF;
+    --blue-cinsa: #F2F9FD;
+    --blue-detalhes: #2E96C9;
+    --blue-eletro: #4FADDB;
+    --blue-comercio: #90CAE9;
+    --cinsa-cancel: #E7EBF2;
+    --blue-entrega: #3F5E94;
+    --blue-editar: #0F6ECD;
+    --bg-white-e5: #E5E7EB;
+    --white-fe: #FEFEFE;
+    --black-numbers-37: #374151;
+    --black-dow-49: #494E57;
+
+    --font-up-dow-right: "Roboto";
+    --font-left-center: "Inter";
+    --font-titulos: "Archivo";
+    --font-degrade: "Montserrat";
+}

@@ -1,0 +1,79 @@
+body {
+    margin: 0px auto;
+    max-width: 1440px;
+}
+
+.container {
+    display: flex;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: var(--cinsa-cancel) 1px solid;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.left-header {
+    margin-left: 20px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDEBAR */
+.left {
+    max-width: 158px;
+    height: 854px;
+    padding: 10px 25px 25px;
+    border-right: var(--cinsa-cancel) 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area-trabalho {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1309px;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+  
+  .inicio-trabalho {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .conj-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    gap: 1em;
+  }
+
+  .ultimas-inscricoes {
+    display: flex;
+    padding-top: 35px;
+    justify-content: space-between;
+    font-family: var(--font-up-dow-right);
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 22px;
+    width: 410px;
+    background-color: var(--blue-cinsa);
+    font-family: var(--font-up-dow-right);
+}
